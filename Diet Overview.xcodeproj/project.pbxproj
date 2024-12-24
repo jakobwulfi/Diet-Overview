@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4F210BD12D19C2F700545C71 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4F210BD02D19C2F700545C71 /* FirebaseCore */; };
+		4F210BD32D19C2F700545C71 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4F210BD22D19C2F700545C71 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4F210B952D19C16A00545C71 /* Diet Overview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Diet Overview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F210BD12D19C2F700545C71 /* FirebaseCore in Frameworks */,
+				4F210BD32D19C2F700545C71 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = "Diet Overview";
 			packageProductDependencies = (
+				4F210BD02D19C2F700545C71 /* FirebaseCore */,
+				4F210BD22D19C2F700545C71 /* FirebaseFirestore */,
 			);
 			productName = "Diet Overview";
 			productReference = 4F210B952D19C16A00545C71 /* Diet Overview.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = 4F210B8C2D19C16A00545C71;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4F210BCF2D19C2F700545C71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4F210B962D19C16A00545C71 /* Products */;
 			projectDirPath = "";
@@ -322,6 +334,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F210BCF2D19C2F700545C71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F210BD02D19C2F700545C71 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F210BCF2D19C2F700545C71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		4F210BD22D19C2F700545C71 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F210BCF2D19C2F700545C71 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F210B8D2D19C16A00545C71 /* Project object */;
 }

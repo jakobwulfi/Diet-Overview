@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct DetailView: View {
+    let snack: Snack
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    DetailView()
+    let previewSnack = Snack(name: "KitKat", kcal: 300, date: Date.now, note: "Test", image: UIImage(systemName: "birthday.cake.fill")!.pngData()!)
+    DetailView(snack: previewSnack).environment(SnackController())
 }
